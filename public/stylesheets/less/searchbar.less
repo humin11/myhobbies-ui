@@ -1,0 +1,82 @@
+//some searchbars variables
+@searchbar-bg:#E8EDF1;
+@searchbar-border:#E5E5E5;
+@searchbar-text-color:#555;
+@searchbar-link-color:#4C8FBD;
+@searchbar-arrow-color:#B2B6BF;
+
+
+
+/* searchbars and searchbox */
+.searchbars {
+ position:relative;
+
+ border-bottom:1px solid @breadcrumb-border;
+ background-color:@searchbar-bg;
+ 
+ min-height:@searchbar-height;
+ line-height:(@searchbar-height - 1);
+
+ padding:0 12px 0 40px;
+
+ display:block;
+ 
+ &.fixed {
+   position:fixed;
+   right:0;
+   left:(@sidebar-width + 1);
+   top:@navbar-mh;
+   z-index:@zindexFixedNavbar - 2;
+ }
+}
+
+
+.searchbar {
+ background-color:transparent;
+ display:inline-block;
+ line-height:24px;
+
+ margin:0 22px 0 12px; padding:0;
+
+ font-size:13px;
+ color:#333;
+ 
+ border-radius:0;
+  > li {
+    & , &.active {
+	  color:@breadcrumb-text-color;
+	}
+	
+	> .divider {
+	  padding:0 4px;
+	}
+	
+	> a {
+	  display:inline-block;
+	  padding:0 4px;
+	  color:@breadcrumb-link-color;
+    }
+  }
+  
+
+  .home-icon {
+	 margin-left:4px; margin-right:2px;
+	 font-size:20px;
+	 position:relative; top:2px;
+  }
+ 
+  .arrow-icon {
+	 height:22px;
+	 padding:0;
+	 margin:0;
+
+	 position:relative; top:1px;
+
+	 font-size:14px;
+	 color:@breadcrumb-arrow-color;
+  }
+ 
+}
+
+
+

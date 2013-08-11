@@ -10,8 +10,11 @@
 
 /* searchbox */
 .nav-search {
-  position:absolute;
-  top:5px; right:22px;
+  position:relative;
+  top:10px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
   line-height:24px;
 
   .form-search {
@@ -22,8 +25,8 @@
 	border-color:@search-border;
 	border-width:1px;
 
-	width:@search-width;
-	height:18px !important;
+	min-width:@search-width;
+	height:30px !important;
 	.border-radius(@search-border-radius) !important;
 
 	font-size:13px;
