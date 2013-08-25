@@ -2,31 +2,34 @@
 @import widgets._
 
 @main("个人主页") {
-	<div class="span3">
+	
+	<div class="span8">
+		@ask_top()
+	</div>
+	
+	
+	<div class="span4">
 		
 		<div class="space-12"></div>
 		<div class="width-80 label label-info label-large arrowed-in arrowed-in-right center">
 			<div class="inline position-relative">
 				<a href="#" class="user-title-label dropdown-toggle" data-toggle="dropdown">
-					<i class="icon-group light-blue middle"></i>
+					<i class="icon-edit light-blue middle"></i>
 					&nbsp;
-					<span class="white middle bigger-120">创建圈子</span>
+					<span class="white middle bigger-120">发表博客</span>
 				</a>
 			</div>
 		</div>
-		
-		<div class="hr hr4"></div>
-		
-		@community_type_my()
+	
+		<div class="hr hr-8"></div>
+	
+		@ask_my()
+	
+		<div class="hr hr-8"></div>
 		
 		@hot_user()
 		
 	</div>
 	
-	<div class="span9">
-		@community_my()
-		
-		@stream()
-	</div>
 	
 }
