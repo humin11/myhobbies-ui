@@ -31,6 +31,8 @@ body.breadcrumbs-fixed {
 .main-container {
   padding: 0;
   position: relative;
+  margin-left:auto;
+  margin-right:auto;
 }
 .main-content {
   margin-left: 190px;
