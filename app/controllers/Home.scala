@@ -11,4 +11,8 @@ object Home extends Controller {
     Ok(views.html.Home.index("Your new application is ready."))
   }
   
+  def friend = Action {
+  	Ok(views.html.Home.friend("Your new application is ready."))
+  }
+  
 }
